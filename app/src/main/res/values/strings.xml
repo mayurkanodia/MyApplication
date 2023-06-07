@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Products</string>
+    <string name="title_dashboard">Favorites</string>
+    <string name="title_product">Product Details</string>
+    <string name="no_network_connection">No internet connection</string>
+</resources>
