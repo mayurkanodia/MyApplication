@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp">
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="16dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/imageViewAvatar"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:src="@color/black"/>
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:id="@+id/optionMenuButton"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:background="@android:drawable/ic_lock_power_off" />
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:id="@+id/titleLayout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_constraintTop_toTopOf="@+id/imageViewAvatar"
+          app:layout_constraintBottom_toBottomOf="@+id/imageViewAvatar"
+          app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+          android:layout_marginStart="16dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="The pair of sneckers"
+             android:textSize="24dp" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="123456789"
+             android:layout_marginTop="8dp"/>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:id="@+id/fromLayout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="24dp"
+          app:layout_constraintTop_toBottomOf="@+id/titleLayout"
+          app:layout_constraintStart_toStartOf="@+id/titleLayout">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+             app:layout_constraintTop_toTopOf="@+id/imageViewAvatar"
+             android:text="From : "
+             android:textSize="16dp" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintStart_toStartOf="@+id/titleTextView"
+             app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+             android:text="San Diego"
+             android:textSize="24dp"
+             android:layout_marginTop="8dp"/>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:id="@+id/statusLayout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="24dp"
+          app:layout_constraintTop_toBottomOf="@+id/titleLayout"
+          app:layout_constraintStart_toStartOf="@+id/titleLayout">
+
+         <TextView
+             android:id="@+id/From"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+             app:layout_constraintTop_toTopOf="@+id/imageViewAvatar"
+             android:text="From : "
+             android:textSize="16dp" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintStart_toStartOf="@+id/titleTextView"
+             app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+             android:text="San Diego"
+             android:textSize="24dp"
+             android:layout_marginTop="8dp"/>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_constraintTop_toTopOf="@+id/imageViewAvatar"
+          app:layout_constraintBottom_toBottomOf="@+id/imageViewAvatar"
+          app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+          android:layout_marginStart="16dp">
+
+         <TextView
+             android:id="@+id/titleTextView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+             app:layout_constraintTop_toTopOf="@+id/imageViewAvatar"
+             android:text="The pair of sneckers"
+             android:textSize="24dp" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintStart_toStartOf="@+id/titleTextView"
+             app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+             android:text="123456789"
+             android:layout_marginTop="8dp"/>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -40,3 +40,23 @@ fun Context.showLongToast(toastMsg: String?) = toastMsg?.let {
 fun Context.showLongToast(@StringRes toastMsg: Int) =
     Toast.makeText(this.applicationContext, toastMsg, Toast.LENGTH_LONG).show()
 
+fun String.checkForPal(){
+
+}
+
+fun String.isPalindrome() : Boolean{
+    var i =0
+    var j = this.length-1
+    var result = true
+
+    while (i<j){
+        if (this[i] != this[j]){
+            result = false
+            break
+        }
+        i++
+        j--
+    }
+    return result
+}
+
